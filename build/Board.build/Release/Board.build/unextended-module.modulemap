@@ -1,0 +1,10 @@
+framework module Board {
+  umbrella header "Board.h"
+
+  export *
+  module * { export * }
+}
+
+module Board.__Swift {
+    exclude header "Board-Swift.h"
+}

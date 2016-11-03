@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/daher/Documents/whiteboard-board/build/Release/Board.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/daher/Documents/whiteboard-board/build/Board.build/Release/Board.build/unextended-module.modulemap',
+    }]
+  }]
+}
