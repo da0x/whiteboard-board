@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/daher-alfawares/whiteboard-board.git", :tag => "#{s.version}" }
 
-  s.source_files  = "Classes", "Board/**/*.{swift,hpp,cpp,mm,h,m}"
+  s.source_files  = "Classes", "Board/*.{swift,hpp,cpp,mm,h,m}"
   s.exclude_files = "Classes/Exclude"
 
 end
