@@ -10,6 +10,7 @@
 		0C33A63E1DCAEF84004A1A4F /* Board.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C33A6341DCAEF84004A1A4F /* Board.framework */; };
 		0C33A6431DCAEF84004A1A4F /* BoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6421DCAEF84004A1A4F /* BoardTests.m */; };
 		0C33A6451DCAEF84004A1A4F /* Board.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C33A6371DCAEF84004A1A4F /* Board.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C33A6591DCAFCDF004A1A4F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6581DCAFCDF004A1A4F /* Vector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0C33A63D1DCAEF84004A1A4F /* BoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C33A6421DCAEF84004A1A4F /* BoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoardTests.m; sourceTree = "<group>"; };
 		0C33A6441DCAEF84004A1A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C33A6581DCAFCDF004A1A4F /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		0C33A6361DCAEF84004A1A4F /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				0C33A6581DCAFCDF004A1A4F /* Vector.swift */,
 				0C33A6371DCAEF84004A1A4F /* Board.h */,
 				0C33A6381DCAEF84004A1A4F /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 					0C33A6331DCAEF84004A1A4F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NF856H64DK;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					0C33A63C1DCAEF84004A1A4F = {
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C33A6591DCAFCDF004A1A4F /* Vector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +320,7 @@
 		0C33A6491DCAEF84004A1A4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -329,12 +335,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Daher.Board;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0C33A64A1DCAEF84004A1A4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -349,12 +358,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Daher.Board;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		0C33A64C1DCAEF84004A1A4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NF856H64DK;
 				INFOPLIST_FILE = BoardTests/Info.plist;
@@ -367,6 +378,7 @@
 		0C33A64D1DCAEF84004A1A4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NF856H64DK;
 				INFOPLIST_FILE = BoardTests/Info.plist;
@@ -395,6 +407,7 @@
 				0C33A64A1DCAEF84004A1A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C33A64B1DCAEF84004A1A4F /* Build configuration list for PBXNativeTarget "BoardTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +416,7 @@
 				0C33A64D1DCAEF84004A1A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

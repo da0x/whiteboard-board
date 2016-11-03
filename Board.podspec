@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "whiteboard-board"
+  s.name         = "Board"
   s.version      = "0.0.2"
   s.summary      = "A model representation of whiteboard."
   s.description  = "This library contains C++ representation of whiteboard."
