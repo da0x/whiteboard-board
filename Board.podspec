@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.source       = { :git => "https://github.com/daher-alfawares/whiteboard-board.git", :tag => "#{s.version}" }
   s.source_files  = "Classes", "Board/**/*.{swift,hpp,cpp,h,m,mm}"
-  s.public_header_files = "**/Board.h"
 
 end

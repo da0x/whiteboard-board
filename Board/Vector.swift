@@ -9,8 +9,8 @@
 import Foundation
 
 open class Vector {
-    var x : Float
-    var y : Float
+    public var x : Float
+    public var y : Float
     
     public init(){
         x = 0

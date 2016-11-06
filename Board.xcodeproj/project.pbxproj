@@ -10,6 +10,7 @@
 		0C33A6951DCEE614004A1A4F /* Board.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C33A68B1DCEE614004A1A4F /* Board.framework */; };
 		0C33A69A1DCEE614004A1A4F /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6991DCEE614004A1A4F /* BoardTests.swift */; };
 		0C33A6B01DCEE65E004A1A4F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6AF1DCEE65E004A1A4F /* Vector.swift */; };
+		0C33A6B81DCEEE16004A1A4F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6B71DCEEE16004A1A4F /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		0C33A69B1DCEE614004A1A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C33A6AF1DCEE65E004A1A4F /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		0C33A6B31DCEE721004A1A4F /* Board.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Board.podspec; sourceTree = "<group>"; };
+		0C33A6B71DCEEE16004A1A4F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		0C33A68D1DCEE614004A1A4F /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				0C33A6B71DCEEE16004A1A4F /* Card.swift */,
 				0C33A6AF1DCEE65E004A1A4F /* Vector.swift */,
 				0C33A68F1DCEE614004A1A4F /* Info.plist */,
 			);
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C33A6B01DCEE65E004A1A4F /* Vector.swift in Sources */,
+				0C33A6B81DCEEE16004A1A4F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
