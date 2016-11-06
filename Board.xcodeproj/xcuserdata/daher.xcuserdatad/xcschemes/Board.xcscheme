@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C33A6631DCB02C4004A1A4F"
+               BlueprintIdentifier = "0C33A68A1DCEE614004A1A4F"
                BuildableName = "Board.framework"
                BlueprintName = "Board"
                ReferencedContainer = "container:Board.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C33A66C1DCB02C5004A1A4F"
+               BlueprintIdentifier = "0C33A6931DCEE614004A1A4F"
                BuildableName = "BoardTests.xctest"
                BlueprintName = "BoardTests"
                ReferencedContainer = "container:Board.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C33A6631DCB02C4004A1A4F"
+            BlueprintIdentifier = "0C33A68A1DCEE614004A1A4F"
             BuildableName = "Board.framework"
             BlueprintName = "Board"
             ReferencedContainer = "container:Board.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C33A6631DCB02C4004A1A4F"
+            BlueprintIdentifier = "0C33A68A1DCEE614004A1A4F"
             BuildableName = "Board.framework"
             BlueprintName = "Board"
             ReferencedContainer = "container:Board.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C33A6631DCB02C4004A1A4F"
+            BlueprintIdentifier = "0C33A68A1DCEE614004A1A4F"
             BuildableName = "Board.framework"
             BlueprintName = "Board"
             ReferencedContainer = "container:Board.xcodeproj">
