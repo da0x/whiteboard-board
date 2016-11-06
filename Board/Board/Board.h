@@ -2,11 +2,11 @@
 //  Board.h
 //  Board
 //
-//  Created by Daher Alfawares on 11/3/16.
+//  Created by Daher Alfawares on 11/5/16.
 //  Copyright © 2016 Daher Alfawares. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 
 //! Project version number for Board.
 FOUNDATION_EXPORT double BoardVersionNumber;
