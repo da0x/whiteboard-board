@@ -29,4 +29,9 @@ public struct WhiteboardInfo : Info {
     public mutating func appendCard(with id:String){
         self.boardCards.append(id)
     }
+    public mutating func removeCard(with id:String){
+        if let index = boardCards.index(of: id) {
+            boardCards.remove(at: index)
+        }
+    }
 }
