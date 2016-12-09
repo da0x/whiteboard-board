@@ -9,29 +9,29 @@
 import Foundation
 
 public struct WhiteboardInfo : Info {
-    private var boardCards : [String]
+    private var boardItems : [String]
     private var boardTitle :  String
     
     public init(with dictionary:[String:AnyObject]){
-        self.boardCards = dictionary["cards"] as? [String] ?? []
+        self.boardItems = dictionary["items"] as? [String] ?? []
         self.boardTitle = dictionary["title"] as? String ?? ""
     }
     public func encoded() -> [String:AnyObject] {
         return
             [
                 "title" : boardTitle as AnyObject,
-                "cards" : boardCards as AnyObject
+                "items" : boardItems as AnyObject
         ]
     }
-    public mutating func cards() -> [String] {
-        return boardCards
+    public mutating func items() -> [String] {
+        return boardItems
     }
-    public mutating func appendCard(with id:String){
-        self.boardCards.append(id)
+    public mutating func appendItem(with id:String){
+        self.boardItems.append(id)
     }
-    public mutating func removeCard(with id:String){
-        if let index = boardCards.index(of: id) {
-            boardCards.remove(at: index)
+    public mutating func removeItem(with id:String){
+        if let index = boardItems.index(of: id) {
+            boardItems.remove(at: index)
         }
     }
 }
