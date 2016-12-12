@@ -31,10 +31,14 @@ open class Vector {
     }
     
     public func asPoint() -> CGPoint {
+        let x = floorf(self.x)
+        let y = floorf(self.y)
         return CGPoint(x:CGFloat(x),y:CGFloat(y))
     }
     
     public func asSize() -> CGSize {
+        let x = floorf(self.x)
+        let y = floorf(self.y)
         return CGSize(width:CGFloat(x),height:CGFloat(y))
     }
 }
@@ -57,6 +61,6 @@ public extension Vector {
 
 public extension Vector {
     func description()->String {
-        return "Vector (\(x),\(y))"
+        return "Vector (\(x),\t\(y))"
     }
 }

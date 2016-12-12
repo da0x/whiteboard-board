@@ -11,20 +11,17 @@ import Foundation
 
 public struct CardInfo : Info {
     public var t = ""
-    public var x = Float(0)
-    public var y = Float(0)
+    public var l = "Card"
     
     public init(with value:[String:AnyObject]){
-        t = String( value["t"] as? String ?? ""  ) ?? ""
-        x = Float ( value["x"] as? String ?? "0" ) ?? 0
-        y = Float ( value["y"] as? String ?? "0" ) ?? 0
+        t = String( value["t"] as? String ?? "" ) ?? ""
+        l = String( value["l"] as? String ?? "" ) ?? ""
     }
     
     public func encoded() -> [String:AnyObject] {
         return [
             "t": t as AnyObject,
-            "x": String(x) as AnyObject,
-            "y": String(y) as AnyObject
+            "l": l as AnyObject
         ]
     }
 }

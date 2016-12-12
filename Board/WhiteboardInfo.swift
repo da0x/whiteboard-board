@@ -18,9 +18,9 @@ public struct WhiteboardInfo : Info {
     }
     public func encoded() -> [String:AnyObject] {
         return
-            [
-                "title" : boardTitle as AnyObject,
-                "items" : boardItems as AnyObject
+        [
+            "title" : boardTitle as AnyObject,
+            "items" : boardItems as AnyObject
         ]
     }
     public mutating func items() -> [String] {
