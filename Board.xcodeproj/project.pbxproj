@@ -13,6 +13,8 @@
 		0C33A69A1DCEE614004A1A4F /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6991DCEE614004A1A4F /* BoardTests.swift */; };
 		0C33A6B01DCEE65E004A1A4F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6AF1DCEE65E004A1A4F /* Vector.swift */; };
 		0C33A6B81DCEEE16004A1A4F /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33A6B71DCEEE16004A1A4F /* CardInfo.swift */; };
+		0C6811D81E1B47D500592EF1 /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6811D61E1B47D500592EF1 /* ItemInfo.swift */; };
+		0C6811D91E1B47D500592EF1 /* TextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6811D71E1B47D500592EF1 /* TextInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0C33A6AF1DCEE65E004A1A4F /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		0C33A6B31DCEE721004A1A4F /* Board.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Board.podspec; sourceTree = "<group>"; };
 		0C33A6B71DCEEE16004A1A4F /* CardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		0C6811D61E1B47D500592EF1 /* ItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
+		0C6811D71E1B47D500592EF1 /* TextInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		0C33A68D1DCEE614004A1A4F /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				0C6811D61E1B47D500592EF1 /* ItemInfo.swift */,
+				0C6811D71E1B47D500592EF1 /* TextInfo.swift */,
 				0C33A6B71DCEEE16004A1A4F /* CardInfo.swift */,
 				0C33A6AF1DCEE65E004A1A4F /* Vector.swift */,
 				0C33A68F1DCEE614004A1A4F /* Info.plist */,
@@ -153,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Daher Alfawares";
 				TargetAttributes = {
 					0C33A68A1DCEE614004A1A4F = {
@@ -213,6 +219,8 @@
 				0C33A6B81DCEEE16004A1A4F /* CardInfo.swift in Sources */,
 				0C1614561DE94B4D008C8696 /* WhiteboardInfo.swift in Sources */,
 				0C1614581DE94B59008C8696 /* Info.swift in Sources */,
+				0C6811D91E1B47D500592EF1 /* TextInfo.swift in Sources */,
+				0C6811D81E1B47D500592EF1 /* ItemInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -305,6 +314,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

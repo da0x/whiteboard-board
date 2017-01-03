@@ -21,8 +21,7 @@ public struct WhiteboardInfo : Info {
         self.boardTexts = dictionary["texts"] as? [String] ?? []
     }
     public func encoded() -> [String:AnyObject] {
-        return
-        [
+        return [
             "title" : boardTitle as AnyObject,
             "items" : boardItems as AnyObject,
             "cards" : boardCards as AnyObject,
