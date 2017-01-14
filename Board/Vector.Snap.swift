@@ -20,13 +20,13 @@ extension Vector {
         }
         
         public func up() -> Vector {
-            var snapped = Vector()
+            let snapped = Vector()
             snapped.x = roundUp(vector.x, toNearest: nearest)
             snapped.y = roundUp(vector.y, toNearest: nearest)
             return snapped
         }
         public func down() -> Vector {
-            var snapped = Vector()
+            let snapped = Vector()
             snapped.x = roundDown(vector.x, toNearest: nearest)
             snapped.y = roundDown(vector.y, toNearest: nearest)
             return snapped
