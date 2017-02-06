@@ -9,20 +9,24 @@
 import Foundation
 
 public struct WhiteboardInfo : Info {
-    private var boardTitle :  String
+    private var boardTitle : String
     private var boardItems : [String]
     private var boardTypes : [String:String]
+    private var boardStyle : String
     
     public init(with dictionary:[String:AnyObject]){
         self.boardTitle = dictionary["title"] as? String ?? ""
         self.boardItems = dictionary["items"] as? [String] ?? []
         self.boardTypes = dictionary["types"] as? [String:String] ?? [:]
+        self.boardStyle = dictionary["style"] as? String ?? ""
     }
+    
     public func encoded() -> [String:AnyObject] {
         return [
             "title" : boardTitle as AnyObject,
             "items" : boardItems as AnyObject,
             "types" : boardTypes as AnyObject,
+            "style" : boardStyle as AnyObject,
         ]
     }
     public mutating func items() -> [String] {
@@ -35,7 +39,6 @@ public struct WhiteboardInfo : Info {
         self.boardItems.append(id)
         self.boardTypes[id] = type
     }
-    
     public mutating func removeItem(with id:String){
         if let index = boardItems.index(of: id){
             boardItems.remove(at: index)
@@ -44,6 +47,18 @@ public struct WhiteboardInfo : Info {
         if let index = boardTypes.index(forKey: id) {
             boardTypes.remove(at: index)
         }
+    }
+    public mutating func set(style:String){
+        self.boardStyle = style
+    }
+    public func style() -> String {
+        return self.boardStyle
+    }
+    public mutating func set(title:String){
+        self.boardTitle = title
+    }
+    public func title() -> String {
+        return boardTitle
     }
 }
 
