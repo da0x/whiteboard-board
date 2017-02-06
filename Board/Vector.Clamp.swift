@@ -47,6 +47,12 @@ extension Vector {
             if s.y > parentFrameSize.y {
                 s.y = parentFrameSize.y
             }
+            if s.x < 40 {
+                s.x = 40
+            }
+            if s.y < 40 {
+                s.y = 40
+            }
             return s
         }
     }
