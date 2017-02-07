@@ -37,10 +37,10 @@ public struct UserInfo : Info {
         self.boardList.append(id)
     }
     public mutating func merge(boards:[String]){
-        let currentSet = Set(boardList)
-        let newSet     = Set(boards)
+        let set1 = Set(boardList)
+        let set2 = Set(boards)
         
-        self.boardList = Array<String>(currentSet.union(newSet))
+        self.boardList = Array(set1.union(set2))
     }
     public mutating func removeItem(with id:String){
         if let index = boardList.index(of: id){
