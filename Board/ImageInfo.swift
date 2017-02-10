@@ -27,7 +27,7 @@ public struct ImageInfo : Info {
     public func encoded() -> [String:AnyObject] {
         return [
             "data": dataValue as AnyObject,
-            "type": "pdf" as AnyObject,
+            "type": "png" as AnyObject,
         ]
     }
 }
