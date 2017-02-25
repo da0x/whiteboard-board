@@ -32,10 +32,10 @@ public struct UserInfo : Info {
             "titles"  : titles as AnyObject,
         ]
     }
-    public mutating func boards() -> [String] {
+    public func boards() -> [String] {
         return boardList
     }
-    public mutating func boardTitles() -> [String:String]{
+    public func boardTitles() -> [String:String]{
         return titles
     }
     public mutating func appendItem(with id:String, titled title:String){
