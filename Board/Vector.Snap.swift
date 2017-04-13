@@ -31,8 +31,26 @@ extension Vector {
             snapped.y = roundDown(vector.y, toNearest: nearest)
             return snapped
         }
-        
+        public func toClosestEdge() -> Vector {
 
+            let x1 = roundUp(vector.x, toNearest: nearest)
+            let x2 = roundDown(vector.x, toNearest: nearest)
+            let y1 = roundUp(vector.y, toNearest: nearest)
+            let y2 = roundDown(vector.y, toNearest: nearest)
+            
+            return Vector(
+                x:closest( f1:x1, f2:x2, to:vector.x ),
+                y:closest( f1:y1, f2:y2, to:vector.y )
+            )
+        }
+
+        private func closest(f1:Float,f2:Float, to f:Float)-> Float {
+            if abs(f - f1) < abs(f - f2){
+                return f1
+            } else {
+                return f2
+            }
+        }
         private func roundDown(_ value: Float, toNearest: Float) -> Float {
             return floor(value / toNearest) * toNearest
         }

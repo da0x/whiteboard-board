@@ -13,12 +13,14 @@ public struct WhiteboardInfo : Info {
     private var boardItems : [String]
     private var boardTypes : [String:String]
     private var boardStyle : String
+    private var boardGrid  : Bool
     
     public init(with dictionary:[String:AnyObject]){
         self.boardTitle = dictionary["title"] as? String ?? ""
         self.boardItems = dictionary["items"] as? [String] ?? []
         self.boardTypes = dictionary["types"] as? [String:String] ?? [:]
         self.boardStyle = dictionary["style"] as? String ?? ""
+        self.boardGrid  = dictionary["grid"] as? Bool ?? false
     }
     
     public func encoded() -> [String:AnyObject] {
@@ -27,6 +29,7 @@ public struct WhiteboardInfo : Info {
             "items" : boardItems as AnyObject,
             "types" : boardTypes as AnyObject,
             "style" : boardStyle as AnyObject,
+            "grid"  : boardGrid  as AnyObject,
         ]
     }
     public mutating func items() -> [String] {
@@ -48,17 +51,26 @@ public struct WhiteboardInfo : Info {
             boardTypes.remove(at: index)
         }
     }
+    
     public mutating func set(style:String){
         self.boardStyle = style
     }
     public func style() -> String {
         return self.boardStyle
     }
+    
     public mutating func set(title:String){
         self.boardTitle = title
     }
     public func title() -> String {
         return boardTitle
+    }
+    
+    public mutating func set(grid:Bool){
+        self.boardGrid = grid
+    }
+    public func grid() -> Bool {
+        return self.boardGrid
     }
 }
 
