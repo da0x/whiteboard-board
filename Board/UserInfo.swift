@@ -12,6 +12,7 @@ public struct UserInfo : Info {
     
     private var name        : String
     private var type        : String
+    private var photo       : String
     private var boardList   : [String]
     private var archiveList : [String]
     
@@ -20,6 +21,7 @@ public struct UserInfo : Info {
         self.boardList     = dictionary["boards"] as? [String] ?? []
         self.archiveList   = dictionary["archive"] as? [String] ?? []
         self.type          = dictionary["type"] as? String ?? "local"
+        self.photo         = dictionary["photo"] as? String ?? ""
     }
     public func encoded() -> [String:AnyObject] {
         return [
@@ -27,6 +29,7 @@ public struct UserInfo : Info {
             "boards"  : boardList as AnyObject,
             "archive" : archiveList as AnyObject,
             "type"    : type as AnyObject,
+            "photo"   : photo as AnyObject
         ]
     }
     public func boards() -> [String] {
@@ -56,8 +59,12 @@ public struct UserInfo : Info {
     public mutating func set(type: String){
         self.type = type
     }
+    public mutating func set(photo: String){
+        self.photo = photo
+    }
     
     public func userType() -> String { return self.type }
     public func userName() -> String { return self.name }
+    public func userPhoto() -> String { return self.photo }
 }
 
