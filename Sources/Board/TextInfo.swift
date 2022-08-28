@@ -9,13 +9,13 @@
 import Foundation
 
 
-public struct CardInfo : Info {
+public struct TextInfo : Info {
     public var t = ""
-    public var l = "Card"
+    public var l = "Text"
     
     public init(with value:[String:AnyObject]){
-        t = String( value["t"] as? String ?? "" ) ?? ""
-        l = String( value["l"] as? String ?? "" ) ?? ""
+        t = String( value["t"] as? String ?? "" ) 
+        l = String( value["l"] as? String ?? "" ) 
     }
     
     public func encoded() -> [String:AnyObject] {

@@ -43,7 +43,7 @@ public struct WhiteboardInfo : Info {
         self.boardTypes[id] = type
     }
     public mutating func removeItem(with id:String){
-        if let index = boardItems.index(of: id){
+        if let index = boardItems.firstIndex(of: id){
             boardItems.remove(at: index)
         }
         

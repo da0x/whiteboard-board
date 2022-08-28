@@ -45,16 +45,16 @@ open class Vector {
 
 
 public extension Vector {
-    public static func + (left: Vector, right: Vector) -> Vector {
+    static func + (left: Vector, right: Vector) -> Vector {
         return Vector(x: left.x + right.x, y: left.y + right.y)
     }
-    public static func - (left: Vector, right: Vector) -> Vector {
+    static func - (left: Vector, right: Vector) -> Vector {
         return Vector(x: left.x - right.x, y: left.y - right.y)
     }
-    public static func * (left: Vector, right: Float) -> Vector {
+    static func * (left: Vector, right: Float) -> Vector {
         return Vector(x: left.x*right, y: left.y*right)
     }
-    public static func / (left: Vector, right: Float) -> Vector {
+    static func / (left: Vector, right: Float) -> Vector {
         return Vector(x: left.x/right, y: left.y/right)
     }
 }

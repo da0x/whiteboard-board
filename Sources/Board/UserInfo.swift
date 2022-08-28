@@ -49,7 +49,7 @@ public struct UserInfo : Info {
         self.boardList = Array(set1.union(set2))
     }
     public mutating func removeItem(with id:String){
-        if let index = boardList.index(of: id){
+        if let index = boardList.firstIndex(of: id){
             boardList.remove(at: index)
         }
     }
